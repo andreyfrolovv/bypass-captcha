@@ -62,5 +62,5 @@ async def getScreenshot(url: str, width: int = 1280, height: int = 1024):
 
         return {
             "result": True,
-            "content": img_str,
+            "content": 'data:image/png;base64,' + img_str,
         }
