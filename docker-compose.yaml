@@ -1,5 +1,5 @@
 services:
-  bypass-captcha:
+  invisplaywright-bypass-captcha:
     build: .
     ports:
       - "${EXTERNAL_PORT}:8000"
