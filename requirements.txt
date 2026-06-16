@@ -1,9 +1,4 @@
 fastapi
 uvicorn
-onnxruntime
-python-multipart
-watchfiles
 playwright
 pyvirtualdisplay
-pyscreenshot
-Pillow
