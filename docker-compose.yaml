@@ -1,5 +1,5 @@
 services:
-  bg-remover:
+  bypass-captcha:
     build: .
     ports:
       - "${EXTERNAL_PORT}:8000"
