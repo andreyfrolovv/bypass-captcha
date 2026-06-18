@@ -1,12 +1,7 @@
 services:
   invisible-playwright:
     build: .
-    ports:
-      - "${EXTERNAL_PORT}:8000"
-    volumes:
-      - .:/app
-    # Перезаписываем команду из Dockerfile для локальной разработки:
-    command: uvicorn main:app --host 0.0.0.0 --port 8000 --reload
+    command: uvicorn main:app --host 0.0.0.0 --port 8000
     environment:
       - WATCHFILES_FORCE_POLLING=true
       - PYTHONDONTWRITEBYTECODE=1
